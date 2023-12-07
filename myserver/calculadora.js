@@ -20,6 +20,7 @@ app.get('/Inicio', (req, res) => {
     res.send('Na URL "http://localhost:8080/" '); 
 });
 
+
 //Soma
 app.get('/soma', (req, res) => {
     const { num1, num2 } = req.body;
@@ -33,18 +34,21 @@ app.get('/sub', (req, res) => {
     const result = (num1) - (num2);
     res.send({ result });
 });
+
 //Multiplicação
 app.get('/mult', (req, res) => {
     const { num1, num2 } = req.body;
     const result = (num1) *(num2);
     res.send({ result });
 });
+
 //Divisão
 app.get('/div', (req, res) => {
     const { num1, num2 } = req.body;
     const result = parseFloat(num1) / parseFloat(num2);
     res.send({ result });
 });
+
 //Resto da Divisão
 app.get('/div', (req, res) => {
     const { num1, num2 } = req.body;
